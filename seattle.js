@@ -1,14 +1,14 @@
-var newYorkWeather 
+var seattleweather
 var temperature
 var windspeed
 var weathercode={
-    "latitude": 35.77436,
-    "longitude": -78.64127,
-    "generationtime_ms": 0.07367134094238281,
+    "latitude": 47.595562,
+    "longitude": -122.32443,
+    "generationtime_ms": 0.0654458999633789,
     "utc_offset_seconds": 0,
     "timezone": "GMT",
     "timezone_abbreviation": "GMT",
-    "elevation": 113,
+    "elevation": 40,
     "current_weather_units": {
         "time": "iso8601",
         "interval": "seconds",
@@ -19,13 +19,13 @@ var weathercode={
         "weathercode": "wmo code"
     },
     "current_weather": {
-        "time": "2025-08-28T00:45",
+        "time": "2025-08-28T01:30",
         "interval": 900,
-        "temperature": 69.3,
-        "windspeed": 7.6,
-        "winddirection": 8,
-        "is_day": 0,
-        "weathercode": 1
+        "temperature": 70.2,
+        "windspeed": 5.6,
+        "winddirection": 243,
+        "is_day": 1,
+        "weathercode": 3
     }
 }
 
@@ -34,4 +34,4 @@ setText("wind", newYorkWeather.current_weather.windspeed);
 setText("code", newYorkWeather.current_weather.weathercode);
 
 helper.js
-newYorkWeather.js
+seattle-script.js
