@@ -32,6 +32,3 @@ var weathercode={
 setText("temp", atlantaWeather.current_weather.temperature);
 setText("wind", atlantaWeather.current_weather.windspeed);
 setText("code", atlantaWeather.current_weather.weathercode);
-
-helper.js
-atlanta-script.js

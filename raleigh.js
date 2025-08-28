@@ -32,6 +32,3 @@ var weathercode={
 setText("temp", raleighncWeather.current_weather.temperature);
 setText("wind", raleighncWeather.current_weather.windspeed);
 setText("code", raleighncWeather.current_weather.weathercode);
-
-helper.js
-raleighnc-script.js
