@@ -1,7 +1,7 @@
-var seattleweather
+var weathercode
 var temperature
 var windspeed
-var weathercode={
+var seattle={
     "latitude": 47.595562,
     "longitude": -122.32443,
     "generationtime_ms": 0.0654458999633789,
@@ -28,10 +28,7 @@ var weathercode={
         "weathercode": 3
     }
 }
-
-setText("temp", newYorkWeather.current_weather.temperature);
-setText("wind", newYorkWeather.current_weather.windspeed);
-setText("code", newYorkWeather.current_weather.weathercode);
-
-helper.js
-seattle-script.js
+console.log(seattle);
+setText("temp", seattle.current_weather.temperature);
+setText("windspeed", seattle.current_weather.windspeed);
+setText("weathercode", seattle.current_weather.weathercode);
