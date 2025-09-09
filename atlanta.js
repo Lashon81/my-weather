@@ -1,7 +1,7 @@
-var atlantaWeather 
+var weathercode 
 var temperature
 var windspeed
-var weathercode={
+var atlanta={
     "latitude": 33.759865,
     "longitude": -84.39587,
     "generationtime_ms": 0.05793571472167969,
@@ -29,6 +29,6 @@ var weathercode={
     }
 }
 
-setText("temp", atlantaWeather.current_weather.temperature);
-setText("wind", atlantaWeather.current_weather.windspeed);
-setText("code", atlantaWeather.current_weather.weathercode);
+setText("temp", atlanta.current_weather.temperature);
+setText("windspeed", atlanta.current_weather.windspeed);
+setText("weathercode", atlanta.current_weather.weathercode);

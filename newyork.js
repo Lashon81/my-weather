@@ -1,7 +1,7 @@
-var newYorkWeather 
+var weathercode
 var temperature
 var windspeed
-var weathercode={
+var newyork={
     "latitude": 35.77436,
     "longitude": -78.64127,
     "generationtime_ms": 0.07367134094238281,
@@ -29,6 +29,6 @@ var weathercode={
     }
 }
 
-setText("temp", newYorkWeather.current_weather.temperature);
-setText("wind", newYorkWeather.current_weather.windspeed);
-setText("code", newYorkWeather.current_weather.weathercode);
+setText("temp", newyork.current_weather.temperature);
+setText("windspeed", newyork.current_weather.windspeed);
+setText("weathercode", newyork.current_weather.weathercode);

@@ -1,7 +1,7 @@
-var raleighncWeather 
+var weathercode 
 var temperature
 var windspeed
-var weathercode={
+var raleigh={
     "latitude": 35.77436,
     "longitude": -78.64127,
     "generationtime_ms": 0.0667572021484375,
@@ -28,7 +28,7 @@ var weathercode={
         "weathercode": 0
     }
 }
-
-setText("temp", raleighncWeather.current_weather.temperature);
-setText("wind", raleighncWeather.current_weather.windspeed);
-setText("code", raleighncWeather.current_weather.weathercode);
+console.log(raleigh);
+setText("temp", raleigh.current_weather.temperature);
+setText("windspeed", raleigh.current_weather.windspeed);
+setText("weathercode", raleigh.current_weather.weathercode);
