@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(42, 7, 138);
+}
+
+.card1 {
+    background-color: rgb(150, 62, 77);
+}
+
+.card2 {
+background-color: white;
+border-color: red;
+}
+
+.card3 {
+background-color: rgb(196, 57, 154);
+}
+
+.card4 {
+background-color: rgb(153, 149, 190);
+}
+
+.card5 {
+background-color: rgb(77, 69, 69);
+}
