@@ -29,8 +29,9 @@ var seattle = {}
 //     }
 // }
 
-document.getElementById("getWeather")?.addEventListener("click", () => {
+document.getElementById("seattleweather")?.addEventListener("click", () => {
     console.log("seattleweather");
+     fetchseattleweather();
 });
 
 
@@ -41,7 +42,7 @@ function fetchseattleweather() {
     };
 
     fetch("https://api.open-meteo.com/v1/forecast?latitude=47.6038321&longitude=-122.330062&current_weather=true&temperature_unit=fahrenheit&windspeed&weathercode", requestOptions)
-        .then((response) => response.text())
+        .then((response) => response.json())
         .then(function (result) {
             console.log(result);
             seattle = result

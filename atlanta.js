@@ -37,7 +37,6 @@ document.getElementById("atlantaweather")?.addEventListener("click", () => {
   fetchatlantaweather();
 });
 
-
 function fetchatlantaweather() {
   const requestOptions = {
     method: "GET",

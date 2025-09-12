@@ -45,10 +45,10 @@ function fetchnewOrleansweather() {
         .then((response) => response.json())
         .then(function (result) {
             console.log(result);
-            newOrleans = result
+            newOrleansWeather = result
             setText("newOrleanstemp", newOrleansWeather.current_weather.temperature);
             setText("newOrleanswindspeed", newOrleansWeather.current_weather.windspeed);
             setText("newOrleansweathercode", newOrleansWeather.current_weather.weathercode);
         })
         .catch((error) => console.error(error));
-}
+};

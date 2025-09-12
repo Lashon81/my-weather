@@ -41,7 +41,7 @@ function fetchnewyorkweather() {
   };
 
   fetch("https://api.open-meteo.com/v1/forecast?latitude=40.7127281&longitude=-74.0060152&current_weather=true&temperature_unit=fahrenheit&weathercode&windspeed", requestOptions)
-    .then((response) => response.text())
+    .then((response) => response.json())
     .then(function (result) {
       console.log(result);
       newyork = result

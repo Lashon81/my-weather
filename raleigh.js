@@ -31,16 +31,18 @@ var raleigh = {}
 
 document.getElementById("raleighweather")?.addEventListener("click", () => {
   console.log("raleighweather");
+   fetchraleighweather();
 });
 
 function fetchraleighweather() {
+  console.log(raleigh);
   const requestOptions = {
     method: "GET",
     redirect: "follow"
   };
 
   fetch("https://api.open-meteo.com/v1/forecast?latitude=35.7803977&longitude=-78.6390989&current_weather=true&temperature_unit=fahrenheit&windspeed&weathercode", requestOptions)
-    .then((response) => response.text())
+    .then((response) => response.json())
     .then(function (result) {
       console.log(result);
       raleigh = result
